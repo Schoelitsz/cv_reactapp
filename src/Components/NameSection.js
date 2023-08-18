@@ -17,6 +17,8 @@ function NameSection() {
                     <h1 className='name'>Terrinia Schoelitsz</h1>
                 </Col>
             </Row>
+
+            {/* iconskills goes here */}
         </Container>
     
     );

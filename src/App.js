@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 //import "./App.css";
 import "./styles/scss/App.scss";
-import NameSection from './Components/NameSection';
+import Display from "./Components/Display";
+import FloatingMenu from "./Components/FloatingMenu";
+
 
 function App() {
   return (
     <div className="App">
-      <NameSection />
+      <FloatingMenu />
+      <Display />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+@import 'variables';
+
+.floating-menu {
+    background-color: $pastel-pink;
+
+    .offcanvas {
+        width: 300px !important; 
+        max-height: calc(75vh - 50px) !important; 
+        transform: translateY(25vh) !important; 
+        top: 0 !important; 
+        border-right: 2px solid #ddd !important; 
+        background-color: transparent;
+
+    }
+}
