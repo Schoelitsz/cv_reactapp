@@ -1,3 +1,7 @@
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import '../styles/scss/Section.scss';
+
 function NameSection() {
     return (
         <Container className='namesection'>
@@ -9,11 +13,13 @@ function NameSection() {
                     </picture>
                     </div>
                 </Col>
-                <Col lg={8}>
-                    <h1>Terrinia Schoelitsz</h1>
+                <Col className='d-flex align-items-center' lg={8}>
+                    <h1 className='name'>Terrinia Schoelitsz</h1>
                 </Col>
             </Row>
         </Container>
     
     );
 }
+
+export default NameSection;

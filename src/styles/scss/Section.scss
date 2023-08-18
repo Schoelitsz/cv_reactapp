@@ -1,0 +1,26 @@
+.namesection {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh; 
+
+    .picture-frame {
+    
+        
+        picture {
+            display: flex;
+            justify-content: flex-end;
+            img {
+                border-radius: 9999px;
+                border-width: 10px;
+                width: 55%;
+                //height: 75%;
+            }
+        } 
+    }
+
+    .name {
+        display: flex;
+        justify-content: start;
+    }
+}

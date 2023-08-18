@@ -1,17 +1,16 @@
 import React from 'react';
 //import '../styles/section.scss';
-//import 'bootstrap/dist/css/bootstrap.css';
-//import {Container, Row, Col} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import {Container, Row, Col} from 'react-bootstrap';
 // import { getIconSkills } from '.';
-// import Skill from '../../server/Models/Skill';
 import { getIconSkills } from '../../../server/Controllers/SkillsController';
 
 
 function IconSkillSection({ iconSkillsArray }) {
     return (
-        // <Container>
-        //     <Row>
-        //         <Col>
+        <Container>
+            <Row>
+                <Col>
                    <ul>
                         {iconSkillsArray.map((skill) => (
                             <li key={skill.idskills}>
@@ -19,9 +18,9 @@ function IconSkillSection({ iconSkillsArray }) {
                             </li>
                         ))}
                    </ul>
-        //         </Col>
-        //     </Row>
-        // </Container>
+                 </Col>
+             </Row>
+        </Container>
     );
 }
 
