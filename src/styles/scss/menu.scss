@@ -4,12 +4,16 @@
     background-color: $pastel-pink;
 
     .offcanvas {
-        width: 300px !important; 
-        max-height: calc(75vh - 50px) !important; 
-        transform: translateY(25vh) !important; 
-        top: 0 !important; 
-        border-right: 2px solid #ddd !important; 
-        background-color: transparent;
-
+        position: fixed;
+        top: 0;
+        left:-300px;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        transition: left 0.3s ease-in-out;
     }
+
+    .offcanvas.active {
+        left: 0; /* Slide in the menu when scrolled */
+      }
 }

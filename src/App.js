@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./styles/scss/App.scss";
 import Display from "./Components/Display";
 import FloatingMenu from "./Components/FloatingMenu";
+import ConstructionBanner from "./Components/ConstructionBanner";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <FloatingMenu />
       <Display />
+      <ConstructionBanner />
     </div>
   );
 }

@@ -22,10 +22,10 @@
     }
   
     .additional-info {
-      width: 0;
-      height: 0;
+      right: -100%;
+        border: solid black;
       overflow: hidden;
-      transition: width 0.3s ease, height 0.3s ease;
+      //transition: width 0.3s ease, height 0.3s ease;
       background-color: #ffffff;
       color: #333333;
       padding: 10px;
@@ -33,16 +33,16 @@
       margin-top: 10px;
     }
   
-    &.expanded {
-      .message {
-        width: 200px;
-        height: 40px;
-      }
+    // &.expanded {
+    //   .message {
+    //     //width: 200px;
+    //     //height: 40px;
+    //   }
   
-      .additional-info {
-        width: 200px;
-        height: auto;
-      }
-    }
+    //   .additional-info {
+    //     width: 200px;
+    //     height: auto;
+    //   }
+    // }
   }
   

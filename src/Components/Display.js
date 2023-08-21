@@ -2,6 +2,8 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import NameSection from './NameSection';
 import Timeline from './Timeline';
+import SkillBars from './SkillSection';
+import ProjectCards from './ProjectSection';
 //import { IconSkillSection } from './SkillSection';
 
 function Display() {
@@ -9,14 +11,13 @@ function Display() {
         <div>
             <NameSection />
             <Timeline />
+            <SkillBars />
+            <ProjectCards />
             
             
-        </div>
-        
-        
+            
+        </div> 
     )
-    
-    
 }
 
 export default Display;
