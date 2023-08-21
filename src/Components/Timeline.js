@@ -1,50 +1,58 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import '../styles/scss/timeline.scss'
 
-function TimelineStep({ year, title }) {
-  return (
-    <div className="timeline-step">
-      <div
-        className="timeline-content"
-        data-toggle="popover"
-        data-trigger="hover"
-        data-placement="top"
-        title=""
-        data-content="And here's some amazing content. It's very engaging. Right?"
-        data-original-title={year}
-      >
-        <div className="inner-circle"></div>
-        <p className="h6 mt-3 mb-1">{year}</p>
-        <p className="h6 text-muted mb-0 mb-lg-0">{title}</p>
-      </div>
+const TimelineItem = ({ date, title, content }) => (
+  <div className="timeline-item">
+    <div className="timeline-date">{date}</div>
+    <div className="timeline-content">
+      <h5>{title}</h5>
+      <p>{content}</p>
     </div>
-  );
-}
+  </div>
+);
 
-function Timeline() {
+const Timeline = () => {
+  const timelineItems = [
+    {
+      date: '2 June',
+      title: 'Event One',
+      content:
+        'It will be as simple as occidental in fact it will be Occidental Cambridge friend',
+    },
+    {
+      date: '5 June',
+      title: 'Event Two',
+      content:
+        'Everyone realizes why a new common language one could refuse translators.',
+    },
+    {
+      date: '7 June',
+      title: 'Event Three',
+      content:
+        'If several languages coalesce the grammar of the resulting simple and regular',
+    },
+    {
+      date: '8 June',
+      title: 'Event Four',
+      content:
+        'Languages only differ in their pronunciation and their most common words.',
+    },
+  ];
+
   return (
-    <div className="container">
-      <div className="row text-center justify-content-center mb-5">
-        <div className="col-xl-6 col-lg-8">
-          <h2 className="font-weight-bold">A Company Evolution</h2>
-          <p className="text-muted">
-            We’re very proud of the path we’ve taken. Explore the history that made us the company we are today.
-          </p>
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col">
-          <div className="timeline-steps aos-init aos-animate" data-aos="fade-up">
-            <TimelineStep year="2003" title="Favland Founded" />
-            <TimelineStep year="2004" title="Launched Trello" />
-            <TimelineStep year="2005" title="Launched Messenger" />
-            <TimelineStep year="2010" title="Open New Branch" />
-            <TimelineStep year="2020" title="In Fortune 500" />
+    <Container className="py-5">
+      <Row>
+        <Col lg="12">
+          <div className="horizontal-timeline">
+            {timelineItems.map((item, index) => (
+              <TimelineItem key={index} {...item} />
+            ))}
           </div>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
-}
+};
 
 export default Timeline;
