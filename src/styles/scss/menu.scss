@@ -9,11 +9,23 @@
         left:-300px;
         width: 300px;
         height: 100%;
-        background-color: #fff;
+        //background-color: transparent;
         transition: left 0.3s ease-in-out;
+        background-color: transparent !important;
+        border: none !important;
+        //opacity: 0;
+
+        
     }
 
-    .offcanvas.active {
-        left: 0; /* Slide in the menu when scrolled */
-      }
+    .offcanvas-body {
+        background-color: transparent; // Make the body background transparent
+        color: #333; // Adjust text color
+        padding: 20px; // Add padding to the body
+
+    }
+
+    // .offcanvas.active {
+    //     left: 0; /* Slide in the menu when scrolled */
+    //   }
 }

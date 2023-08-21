@@ -13,8 +13,10 @@
             img {
                 border-radius: 9999px;
                 border-width: 10px;
+                border: solid black 4px;
                 width: 55%;
                 //height: 75%;
+                box-shadow: 10px 10px 10px;
             }
         } 
     }
@@ -22,5 +24,21 @@
     .name {
         display: flex;
         justify-content: start;
+    }
+}
+
+.iconSkillSection {
+
+    .skilldiv {
+
+        img {
+            max-width: 45%;
+            max-height: 45%;
+            border: solid grey;
+            padding:5px;
+            border-radius: 15%;
+            box-shadow: 5px 5px 5px;
+
+        }
     }
 }
