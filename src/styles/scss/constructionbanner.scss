@@ -1,0 +1,48 @@
+.construction-banner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 999; 
+    //background-color: white;
+
+    .animation {
+        border: solid black;
+        border-radius: 5px;
+    }
+
+  
+    .message {
+      //backdrop-filter: blur(5px);
+      color: transparent;
+      cursor: pointer;
+      transition: width 0.3s ease, height 0.3s ease;
+    }
+  
+    .additional-info {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      transition: width 0.3s ease, height 0.3s ease;
+      background-color: #ffffff;
+      color: #333333;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  
+    &.expanded {
+      .message {
+        width: 200px;
+        height: 40px;
+      }
+  
+      .additional-info {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+  
