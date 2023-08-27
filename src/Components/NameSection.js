@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Carousel, Button } from 'react-bootstrap';
 import '../styles/scss/Section.scss';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { faArrowDown } from '@fortawesome/free-solid-svg-icons'; 
@@ -69,6 +69,11 @@ function NameSection() {
                     </Carousel>
                 </Col>
             </Row>
+            {/* <Row>
+                <Col>
+                    <Button> Contact</Button>
+                </Col>
+            </Row> */}
         </Container>
     );
 }
