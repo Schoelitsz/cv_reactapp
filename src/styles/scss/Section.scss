@@ -46,24 +46,34 @@
 }
 
 .SkillSection {
+
+    .rating {
+        display: flex;
+        justify-content: space-between;
+    }
     
     .progress-div {
         padding-top:10px;
         padding-bottom:10px;
-
+    
         .bg-progress {
             background-color: white;
-            border: solid black 3px;
+            border: solid grey 3px;
             box-shadow: 5px 5px 5px;
             .bg-Python {
-                background-color:yellow;
+                background-color:#57a0f7;
             }
             .bg-CSharp {
-                background-color: purple;
+                background-color:#ae92e1;
+            }
+            .bg-Javascript {
+                background-color: yellow;
             }
             .bg-HTMLCSS {
-                background-color: blue;
-
+                background-color: #fb714a;
+            }
+            .bg-SQL {
+                background-color: darkblue;
             }
 
         }
