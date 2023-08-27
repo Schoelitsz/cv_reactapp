@@ -1,33 +1,106 @@
+@import 'variables';
+
 .namesection {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+
+    .name-and-picture {
+        padding-top: 5%;
+
+        .picture-frame {
+    
+            picture {
+                display: flex;
+                justify-content: flex-end;
+
+                img {
+                    border-radius: 9999px;
+                    border-width: 10px;
+                    border: solid black 4px;
+                    width: 55%;
+                    //height: 75%;
+                    box-shadow: 10px 10px 10px;
+                }
+            } 
+        }
+    
+        .name {
+            display: flex;
+            justify-content: start;
+            //font-family: $font-cherry;
+        }
+    }
+
+    .carousel {
+        padding-top:5%;
+
+        .carousel-control-prev {
+            color: black;
+        }
+
+        .carousel-item {
+            padding-left:90px;
+            padding-right:90px;
+        }
+
+        .carousel-content {
+            //height: 50%; 
+            padding: 50px;
+
+            h1 {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .arrow-section {
+        height: 10vh;
+        
+        .arrow-icon {
+            display: flex;
+            justify-content: center;
+    
+            .icon {
+                border: solid black;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+    }
+
+}
+
+//timeline section
+.py-5 {
+    //background-color: $neutral-beige;
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    //height: 100vh;
 
-    .picture-frame {
-    
-        
-        picture {
-            display: flex;
-            justify-content: flex-end;
-            img {
-                border-radius: 9999px;
-                border-width: 10px;
-                border: solid black 4px;
-                width: 55%;
-                //height: 75%;
-                box-shadow: 10px 10px 10px;
-            }
-        } 
-    }
-
-    .name {
+    .horizontal-timeline {
         display: flex;
-        justify-content: start;
+        .timeline-item {
+            //display: flex;
+        }
+    
     }
+
 }
 
 .iconSkillSection {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+
     padding-top:25px;
     padding-bottom:25px;
 
@@ -46,6 +119,13 @@
 }
 
 .SkillSection {
+
+    // display: flex;
+    // justify-content: center; 
+    // align-items: center; 
+    // display: flex;
+    // flex-direction: column;
+    // height: 100vh; 
 
     .rating {
         display: flex;
@@ -83,4 +163,13 @@
 
        
     }
+}
+
+.project-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
 }
