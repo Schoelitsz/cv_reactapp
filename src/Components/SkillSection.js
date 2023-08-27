@@ -7,7 +7,8 @@ const sliderSkillsArray = [
     { skillname: 'CSharp', score: 50, display: '5' },
     { skillname: 'Javascript', score: 60, display: '6'},
     { skillname: 'HTMLCSS', score: 65, display: '6.5' },
-    { skillname: 'SQL', score: 55, display: '5.5'}
+    { skillname: 'SQL', score: 55, display: '5.5'},
+    { skillname: 'PHP', score: 45, display: '4.5'}
 ];
 
 function SkillBars() {
