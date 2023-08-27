@@ -9,7 +9,7 @@ import ConstructionBanner from "./Components/ConstructionBanner";
 function App() {
   return (
     <div className="App">
-      <FloatingMenu />
+      {/* <FloatingMenu /> */}
       <Display />
       <ConstructionBanner />
     </div>

@@ -44,3 +44,30 @@
         }
     }
 }
+
+.SkillSection {
+    
+    .progress-div {
+        padding-top:10px;
+        padding-bottom:10px;
+
+        .bg-progress {
+            background-color: white;
+            border: solid black 3px;
+            box-shadow: 5px 5px 5px;
+            .bg-Python {
+                background-color:yellow;
+            }
+            .bg-CSharp {
+                background-color: purple;
+            }
+            .bg-HTMLCSS {
+                background-color: blue;
+
+            }
+
+        }
+
+       
+    }
+}
