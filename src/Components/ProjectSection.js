@@ -3,7 +3,7 @@ import {Container, Card } from 'react-bootstrap';
 
 function ProjectCards() {
   return (
-    <Container>
+    <Container className='project-section'>
         <Card style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Title>Card title</Card.Title>

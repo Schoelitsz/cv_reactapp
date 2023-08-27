@@ -1,33 +1,72 @@
-.namesection {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 50vh; 
+@import 'variables';
 
-    .picture-frame {
+.namesection {
+
+    display: flex;
+    //justify-content: center; 
+    //align-items: center; 
+    flex-direction: column;
+    height: 100vh; 
+
+    .name-and-picture {
+        padding-top: 5%;
+
+        .picture-frame {
     
-        
-        picture {
+            picture {
+                display: flex;
+                justify-content: flex-end;
+                img {
+                    border-radius: 9999px;
+                    border-width: 10px;
+                    border: solid black 4px;
+                    width: 55%;
+                    //height: 75%;
+                    box-shadow: 10px 10px 10px;
+                }
+            } 
+        }
+    
+        .name {
             display: flex;
-            justify-content: flex-end;
-            img {
-                border-radius: 9999px;
-                border-width: 10px;
-                border: solid black 4px;
-                width: 55%;
-                //height: 75%;
-                box-shadow: 10px 10px 10px;
-            }
-        } 
+            justify-content: start;
+            //font-family: $font-cherry;
+        }
     }
 
-    .name {
-        display: flex;
-        justify-content: start;
+    .carousel {
+        padding-top:5%;
     }
 }
 
+//timeline section
+.py-5 {
+    //background-color: $neutral-beige;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .horizontal-timeline {
+        display: flex;
+        .timeline-item {
+            //display: flex;
+        }
+    
+    }
+
+}
+
 .iconSkillSection {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+
     padding-top:25px;
     padding-bottom:25px;
 
@@ -46,6 +85,13 @@
 }
 
 .SkillSection {
+
+    // display: flex;
+    // justify-content: center; 
+    // align-items: center; 
+    // display: flex;
+    // flex-direction: column;
+    // height: 100vh; 
 
     .rating {
         display: flex;
@@ -83,4 +129,13 @@
 
        
     }
+}
+
+.project-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
 }

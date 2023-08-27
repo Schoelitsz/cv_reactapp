@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import '../styles/scss/timeline.scss'
+import '../styles/scss/Section.scss'
 
 const TimelineItem = ({ date, title, content }) => (
   <div className="timeline-item">
