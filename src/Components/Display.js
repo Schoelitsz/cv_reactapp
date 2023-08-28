@@ -11,8 +11,8 @@ function Display() {
         <div>
             <NameSection />
             <Timeline />
-            <IconSkillSection />
             <SkillBars />
+            <IconSkillSection />
             <ProjectCards />
             
         </div> 
