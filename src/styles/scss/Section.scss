@@ -1,9 +1,9 @@
 @import 'variables';
 
 .namesection {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; 
+    //display: flex;
+    //flex-direction: column;
+    //height: 100vh; 
 
     .name-and-picture {
         padding-top: 5%;
@@ -33,7 +33,7 @@
     }
 
     .carousel {
-        padding-top:5%;
+        //padding-top:5%;
 
         .carousel-control-prev {
             color: black;
@@ -60,11 +60,10 @@
 //timeline section
 .py-5 {
     //background-color: $neutral-beige;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    display: flex;
-    flex-direction: column;
+    // justify-content: center; 
+    // align-items: center; 
+    // display: flex;
+    // flex-direction: column;
     //height: 100vh;
 
     .horizontal-timeline {
@@ -83,7 +82,7 @@
     align-items: center; 
     display: flex;
     flex-direction: column;
-    height: 100vh; 
+    //height: 100vh; 
 
     padding-top:25px;
     padding-bottom:25px;
