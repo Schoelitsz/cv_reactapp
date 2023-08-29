@@ -1,17 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Container, ProgressBar, Row, Col } from 'react-bootstrap';
 import '../styles/scss/Section.scss';
+//import SkillBars from './SkillBars';
+//import { IconSkillSection } from './IconSkills';
 
 const sliderSkillsArray = [
-    { skillname: 'Python', score: 70, display: '7' },
-    { skillname: 'CSharp', score: 50, display: '5' },
-    { skillname: 'Javascript', score: 60, display: '6'},
-    { skillname: 'HTMLCSS', score: 65, display: '6.5' },
-    { skillname: 'SQL', score: 55, display: '5.5'},
-    { skillname: 'PHP', score: 45, display: '4.5'}
+    { skillname: 'Python', score: 70, display: '7', text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,' },
+    { skillname: 'CSharp', score: 50, display: '5', text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,' },
+    { skillname: 'Javascript', score: 60, display: '6', text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,'},
+    { skillname: 'HTMLCSS', score: 65, display: '6.5', text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,' },
+    { skillname: 'SQL', score: 55, display: '5.5', text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,'},
+    { skillname: 'PHP', score: 45, display: '4.5', text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,'}
 ];
 
-function SkillBars() {
+const iconSkillsArray = ['bootstrap', 'scrum', 'mysql', 'github', 'visualstudiocode'];
+
+function SkillSection() {
+
+    const [hoveredSkillText, setHoveredSkillText] = useState('');
+
+    const handleSkillHover = (text) => {
+        setHoveredSkillText(text);
+    };
+
+    const handleSkillLeave = () => {
+        setHoveredSkillText('');
+    };
+
     return (
         <Container className='SkillSection'>
             <Row>
@@ -33,17 +48,68 @@ function SkillBars() {
             </Row>
             <Row>
                 <Col>
-                {sliderSkillsArray.map((skill, index) => (
-                <div className='progress-div' key={index}>
-                    <h3>{skill.skillname}</h3>
-                    <ProgressBar className='bg-progress' now={skill.score} variant={skill.skillname} />
-                </div>
-            ))}
+                    {sliderSkillsArray.map((skill, index) => (
+                        <div className='progress-div' 
+                            key={index} 
+                            onMouseEnter={() => handleSkillHover(skill.text)}
+                            onMouseLeave={handleSkillLeave}
+                            >
+
+                            <h3>{skill.skillname}</h3>
+                            <ProgressBar className='bg-progress' now={skill.score} variant={skill.skillname} />
+                        </div>
+                    ))}
                 </Col>
             </Row>
-           
+
+            <div className='iconSkillSection'>
+                <Row>
+                    <h1>Also experienced with:</h1>
+                    {iconSkillsArray.map(skill => (
+                        <Col>
+                            <div className='skilldiv'>
+                                <img src={`/images/${skill}.png`} alt={`${skill}.png`} />
+                                <h3>{skill}</h3>
+                            </div>
+                        </Col>
+                    ))}
+                </Row>
+            </div>
         </Container>
     );
 }
 
-export default SkillBars;
+
+// function IconSkillSection() {
+//     return (
+       
+//     );
+// }
+
+// function SkillBubble() {
+//     return(
+//         <Row>
+//             <Col>
+//                 <div className='Skillbubble'>{hoveredSkillText}</div>
+//             </Col>
+//      </Row>
+//     )
+// }
+
+
+
+// function SkillSection() {
+//     return (
+//         <Container className='SkillSection'>
+//             <SkillBars />
+//             <IconSkillSection />
+//             <SkillBubble />
+//         </Container>
+        
+//     )
+
+
+    
+// }
+
+export default SkillSection;

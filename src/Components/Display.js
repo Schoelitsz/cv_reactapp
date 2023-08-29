@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import NameSection from './NameSection';
 import Timeline from './Timeline';
-import SkillBars from './SkillSection';
+import SkillSection from './SkillSection';
 import ProjectCards from './ProjectSection';
 import { IconSkillSection } from './IconSkills';
 
@@ -11,8 +11,7 @@ function Display() {
         <div>
             <NameSection />
             <Timeline />
-            <SkillBars />
-            <IconSkillSection />
+            <SkillSection />
             <ProjectCards />
             
         </div> 
