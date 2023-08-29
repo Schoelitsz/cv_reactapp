@@ -80,36 +80,4 @@ function SkillSection() {
 }
 
 
-// function IconSkillSection() {
-//     return (
-       
-//     );
-// }
-
-// function SkillBubble() {
-//     return(
-//         <Row>
-//             <Col>
-//                 <div className='Skillbubble'>{hoveredSkillText}</div>
-//             </Col>
-//      </Row>
-//     )
-// }
-
-
-
-// function SkillSection() {
-//     return (
-//         <Container className='SkillSection'>
-//             <SkillBars />
-//             <IconSkillSection />
-//             <SkillBubble />
-//         </Container>
-        
-//     )
-
-
-    
-// }
-
 export default SkillSection;
