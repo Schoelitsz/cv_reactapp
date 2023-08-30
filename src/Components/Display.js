@@ -4,7 +4,7 @@ import NameSection from './NameSection';
 import Timeline from './Timeline';
 import SkillSection from './SkillSection';
 import ProjectCards from './ProjectSection';
-import { IconSkillSection } from './IconSkills';
+//import { IconSkillSection } from './IconSkills';
 
 function Display() {
     return (

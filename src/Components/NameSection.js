@@ -8,7 +8,7 @@ import '../styles/scss/Section.scss';
 
 function NameSection() {
     return (
-        <Container className='namesection'>
+        <Container className='namesection' id="Home">
             <Row className='name-and-picture'>
                 <Col lg={4}>
                     <div className='picture-frame'>

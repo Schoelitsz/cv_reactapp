@@ -6,6 +6,7 @@ import Display from "./Components/Display";
 import ConstructionBanner from "./Components/ConstructionBanner";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import SideMenu from "./Components/SideMenu";
+import './styles/scss/general.scss';
 
 
 

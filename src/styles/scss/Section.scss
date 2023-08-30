@@ -42,11 +42,16 @@
         .carousel-item {
             padding-left:90px;
             padding-right:90px;
+
+            @media only screen and (max-width: 992px) {
+                padding: 0;
+            }
         }
 
         .carousel-content {
             //height: 50%; 
             padding: 50px;
+
 
             h1 {
                 padding-left: 5px;
@@ -94,13 +99,19 @@
 }
 
 .SkillSection {
+    padding-top: 40px;
+    display: flex;
+    //justify-content: center; 
+    //align-items: center; 
+    flex-direction: column;
+    height: 100vh; 
 
-    // display: flex;
-    // justify-content: center; 
-    // align-items: center; 
-    // display: flex;
-    // flex-direction: column;
-    // height: 100vh; 
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    
 
     .rating {
         display: flex;
@@ -141,9 +152,8 @@
 
     .iconSkillSection {
         display: flex;
-        justify-content: center; 
-        align-items: center; 
-        display: flex;
+        //justify-content: center; 
+        //align-items: center; 
         flex-direction: column;
         //height: 100vh; 
     
@@ -176,10 +186,14 @@
 
 
 .project-section {
+
     display: flex;
-    justify-content: center; 
     align-items: center; 
-    display: flex;
     flex-direction: column;
     height: 100vh; 
+
+    h1 {
+        padding-bottom: 10px;
+    }
+    
 }

@@ -28,7 +28,8 @@ function SkillSection() {
     };
 
     return (
-        <Container className='SkillSection'>
+        <Container className='SkillSection' id="Skills">
+            <h1>Skills</h1>
             <Row>
                 <Col>
                 <h3 className='rating'>

@@ -4,11 +4,13 @@ import '../styles/scss/Section.scss'
 
 function Timeline() {
   return (
-    <Container className="py-5">
+    <Container className="py-5" id='Resume'>
+      <h1>Resume</h1>
       <ul className="timeline">
         <li className="timeline-item mb-5">
-          <h5 className="fw-bold">Our company starts its operations</h5>
-          <p className="text-muted mb-2 fw-bold">11 March 2020</p>
+          <h3>Software Engineer</h3>
+          <h5 className="fw-bold">Etesian IT Consultency</h5>
+          <p className="text-muted mb-2 fw-bold">01/2023 - 06/2023</p>
           <p className="text-muted">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
             necessitatibus adipisci, ad alias, voluptate pariatur officia
@@ -18,18 +20,9 @@ function Timeline() {
         </li>
 
         <li className="timeline-item mb-5">
-          <h5 className="fw-bold">First customer</h5>
-          <p className="text-muted mb-2 fw-bold">19 March 2020</p>
-          <p className="text-muted">
-            Quisque ornare dui nibh, sagittis egestas nisi luctus nec. Sed
-            aliquet laoreet sapien, eget pulvinar lectus maximus vel.
-            Phasellus suscipit porta mattis.
-          </p>
-        </li>
-
-        <li className="timeline-item mb-5">
-          <h5 className="fw-bold">Our team exceeds 10 people</h5>
-          <p className="text-muted mb-2 fw-bold">24 June 2020</p>
+          <h3>SmartBar Technical Support</h3>
+          <h5 className="fw-bold">Media Markt Heerlen</h5>
+          <p className="text-muted mb-2 fw-bold">10/2021 - 11/2022</p>
           <p className="text-muted">
             Orci varius natoque penatibus et magnis dis parturient montes,
             nascetur ridiculus mus. Nulla ullamcorper arcu lacus, maximus
@@ -40,6 +33,17 @@ function Timeline() {
         </li>
 
         <li className="timeline-item mb-5">
+          <h3>HBO Associate Degree IT -- Graduated</h3>
+          <h5 className="fw-bold">Zuyd Hogeschool Heerlen, The Netherlands</h5>
+          <p className="text-muted mb-2 fw-bold">09/2018 - 07/2021</p>
+          <p className="text-muted">
+            Quisque ornare dui nibh, sagittis egestas nisi luctus nec. Sed
+            aliquet laoreet sapien, eget pulvinar lectus maximus vel.
+            Phasellus suscipit porta mattis.
+          </p>
+        </li>
+
+        {/* <li className="timeline-item mb-5">
           <h5 className="fw-bold">Earned the first million $!</h5>
           <p className="text-muted mb-2 fw-bold">15 October 2020</p>
           <p className="text-muted">
@@ -48,7 +52,7 @@ function Timeline() {
             pharetra libero nibh, id feugiat tortor rhoncus vitae. Ut suscipit
             vulputate mattis.
           </p>
-        </li>
+        </li> */}
       </ul>
     </Container>
   );
