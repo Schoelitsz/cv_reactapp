@@ -4,6 +4,7 @@ import NameSection from './NameSection';
 import Timeline from './Timeline';
 import SkillSection from './SkillSection';
 import ProjectCards from './ProjectSection';
+import ContactSection from './ContactSection';
 //import { IconSkillSection } from './IconSkills';
 
 function Display() {
@@ -13,6 +14,7 @@ function Display() {
             <Timeline />
             <SkillSection />
             <ProjectCards />
+            <ContactSection />
             
         </div> 
     );

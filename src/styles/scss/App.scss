@@ -1,5 +1,14 @@
 @import 'variables';
 
+
 body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
     background-image: linear-gradient(to left, $pastel-purple,$broken-white 47%);
 }
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+    

@@ -34,9 +34,11 @@ function NameSection() {
                                         </li>
                                         <li>
                                             Love playing with <strong>front-end</strong>, fascinated by <strong>back-end</strong>,
-                                            but my ambitions for the future are in <strong>Machine Learning and Embedded software</strong> 
-                                            to one day contribute to the impact <strong>A.I. devices</strong> have on consumers and 
-                                            hopes of a <strong>sustainable world</strong>.
+                                            but my ambitions for the future are in <strong>Machine Learning and Embedded software</strong>  
+                                
+                                        </li>
+                                        <li>
+                                            I currently have an Associate Degree in IT specialized in Software Engineering
                                         </li>
                                     </ul>
                                 </p>
@@ -66,14 +68,33 @@ function NameSection() {
                                 </p>
                             </div>
                         </Carousel.Item>
+                        <Carousel.Item>
+                            <div className='carousel-content'>
+                                <h1>Where do I see myself in the future</h1>
+                                <p>
+                                    <li>
+                                        I want to specialize in Python.
+                                    </li>
+                                    <li>
+                                        In my spare time I learn what I can about algorithm, machine learning and a.i. 
+                                    </li>
+                                    <li>
+                                        Virtual reality, augmented reality and a.i. assisting our day to day life is our future, and I aspire to become part of the evolution and contribute to a new, sustainable and modern world.
+                                    </li>
+                                </p>
+                            </div>
+                        </Carousel.Item>
                     </Carousel>
                 </Col>
             </Row>
-            {/* <Row>
-                <Col>
-                    <Button> Contact</Button>
+            <Row className='contact-row'>
+                <Col className='contact-col'>
+                    <Button className='contact-button'>
+                        <a href='#Contact'>Contact</a>
+                    </Button>
                 </Col>
-            </Row> */}
+            </Row>
+
         </Container>
     );
 }
