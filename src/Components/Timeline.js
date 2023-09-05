@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import '../styles/scss/Section.scss'
 
 function Timeline() {
   return (
-    <Container className="py-5" id='Resume'>
+    <Container className="timeline-section" id='Resume'>
       <h1>Resume</h1>
       <ul className="timeline">
         <li className="timeline-item mb-5">

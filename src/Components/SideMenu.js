@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faFile, faHeart, faComputerMouse, faPhone } from '@fortawesome/free-solid-svg-icons';
-import '../styles/scss/sidemenu.scss'; // Add your CSS file for styling
+import '../styles/scss/sidemenu.scss';
 
 const SideMenu = () => {
   return (
