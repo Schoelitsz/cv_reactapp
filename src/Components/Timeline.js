@@ -57,7 +57,7 @@ function Timeline() {
             It was hard not to fall in love with every single aspect of this experience, and I never say if it's about going back for more.
           </p>
         </li>
-        {/* <li className="timeline-item mb-5">
+        <li className="timeline-item mb-5">
           <h3>HBO Associate Degree IT -- Graduated</h3>
           <h5 className="fw-bold">Zuyd Hogeschool Heerlen, The Netherlands</h5>
           <p className="text-muted mb-2 fw-bold">09/2018 - 07/2021</p>
@@ -71,7 +71,7 @@ function Timeline() {
 
             It was hard not to fall in love with every single aspect of this experience, and I never say if it's about going back for more.
           </p>
-        </li> */}
+        </li>
       </ul>
     </Container>
   );
