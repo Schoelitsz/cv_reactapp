@@ -29,6 +29,12 @@
             justify-content: flex-start;
             //font-family: $font-cherry;
         }
+
+        .current-section {
+            display: flex;
+            align-items: center;
+            //border: 10px solid black;
+        }
     }
 
     .carousel {
@@ -215,4 +221,14 @@
     align-items: center; 
     flex-direction: column;
     height: 100vh; 
+
+    .contact-form {
+        padding: 5px;
+
+        .submitcontact-button {
+            padding: 5px;
+
+
+        }
+    }
 }

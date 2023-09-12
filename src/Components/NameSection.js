@@ -17,8 +17,18 @@ function NameSection() {
                     </picture>
                     </div>
                 </Col>
-                <Col className='d-flex align-items-center' lg={8}>
+                <Col className='d-flex align-items-center' lg={4}>
                     <h1 className='name'>Terrinia Schoelitsz</h1>
+                </Col>
+                <Col className='current-section' lg={4}>
+                    <div>
+                        <h3>Current occupation:</h3>
+                        <label>Looking for a new challenge!</label>
+                    </div>
+                    <div>
+                        <h3>Last completed education:</h3>
+                        <label>Associate Degree in Software Engineering</label>
+                    </div>
                 </Col>
             </Row>
             <Row className='carousel'>
