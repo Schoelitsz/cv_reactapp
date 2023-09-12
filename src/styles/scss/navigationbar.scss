@@ -1,0 +1,14 @@
+@import 'variables';
+
+.navigation-bar {
+    background-color: $broken-white;
+    justify-content: flex-end !important;
+    //padding-right: 2%;
+    .nav {
+        padding-right: 40px;
+
+        // .icon {
+        //     //hey
+        // }
+    }
+}

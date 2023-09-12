@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faFile, faHeart, faComputerMouse, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faFile, faHeart, faComputerMouse, faPhone, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import '../styles/scss/sidemenu.scss';
 
 const SideMenu = () => {
@@ -35,6 +35,12 @@ const SideMenu = () => {
         <Nav.Link href="#Contact">
               <FontAwesomeIcon className='icon' icon={faPhone} />
             Contact
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="#About">
+              <FontAwesomeIcon className='icon' icon={faCircleInfo} />
+            About this App
         </Nav.Link>
       </Nav.Item>
     </Nav>

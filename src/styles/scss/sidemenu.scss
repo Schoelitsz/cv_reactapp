@@ -4,7 +4,7 @@
     width: 200px;
     background-color: transparent;
     padding-top: 10%;
-    padding-left: 3% !important;
+    padding-left: 1% !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,15 +19,14 @@
     color: #343a40;
     text-decoration: none;
     padding: 10px 20px;
+    align-items: center;
 
     .icon {
         padding-right: 10px;
-
     }
   }
   
   .side-menu a:hover::after {
     color: $primary-blue;
-    
-
+  
   }

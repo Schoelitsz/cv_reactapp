@@ -2,11 +2,36 @@ import React from 'react';
 import { Container, Row, Col, Carousel, Button } from 'react-bootstrap';
 import '../styles/scss/Section.scss';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faArrowDown } from '@fortawesome/free-solid-svg-icons'; 
-
-
+//import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { useState, useEffect } from "react"; 
 
 function NameSection() {
+    const [user, setUser] = useState({ name: '' });
+
+  useEffect(() => {
+    fetch('http://localhost:8000/api/user')
+      .then(response => response.json())
+      .then(data => {
+        setUser(data);
+      })
+      .catch(error => {
+        console.error('Error fetching user:', error);
+      });
+    }, []); 
+
+    const [latestEducation, setLatestEducation] = useState({ latestEducation: ''})
+
+    useEffect(() => {
+    fetch('http://localhost:8000/api/latestEducation')
+            .then(response => response.json())
+            .then(data => {
+                setLatestEducation(data);
+            })
+            .catch(error => {
+                console.error('Error fetching educationdata:', error);
+            });
+    }, []);
+    
     return (
         <Container className='namesection' id="Home">
             <Row className='name-and-picture'>
@@ -18,17 +43,7 @@ function NameSection() {
                     </div>
                 </Col>
                 <Col className='d-flex align-items-center' lg={4}>
-                    <h1 className='name'>Terrinia Schoelitsz</h1>
-                </Col>
-                <Col className='current-section' lg={4}>
-                    <div>
-                        <h3>Current occupation:</h3>
-                        <label>Looking for a new challenge!</label>
-                    </div>
-                    <div>
-                        <h3>Last completed education:</h3>
-                        <label>Associate Degree in Software Engineering</label>
-                    </div>
+                    <h1>{user.fullname}</h1>
                 </Col>
             </Row>
             <Row className='carousel'>
@@ -37,51 +52,44 @@ function NameSection() {
                         <Carousel.Item>
                             <div className='carousel-content'>
                                 <h1>Hi, I'm Terri</h1>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            I'm a Junior Software Developer with a <strong>Creative Soul</strong>.
-                                        </li>
-                                        <li>
-                                            Love playing with <strong>front-end</strong>, fascinated by <strong>back-end</strong>,
-                                            but my ambitions for the future are in <strong>Machine Learning and Embedded software</strong>  
-                                
-                                        </li>
-                                        <li>
-                                            I currently have an Associate Degree in IT specialized in Software Engineering
-                                        </li>
-                                    </ul>
-                                </p>
+                                <ul>
+                                    <li>
+                                        I'm a Junior Software Developer with a <strong>Creative Soul</strong>.
+                                    </li>
+                                    <li>
+                                        Love playing with <strong>front-end</strong>, fascinated by <strong>back-end</strong>,
+                                        but my ambitions for the future are in <strong>Machine Learning and Embedded software</strong>  
+                            
+                                    </li>
+                                    <li>
+                                        I currently have an Associate Degree in IT specialized in Software Engineering
+                                    </li>
+                                </ul>
                             </div>
                         </Carousel.Item>
                         <Carousel.Item>
                             <div className='carousel-content'>
                                 <h1>My qualities</h1>
-                                <p>
-                                    <ul>
-                                        <li><strong>Persistent:</strong> I'm not afraid to go down the rabbit hole</li>
-                                        <li><strong>Ambitious:</strong> I believe in launching myself out of my comfort zone and I'm not scared to fail</li>
-                                        <li><strong>Reflective:</strong> It's not about eliminating flaws, it's about knowing them</li>
-                                        
-                                    </ul>
-                                </p>
+                                <ul>
+                                    <li><strong>Persistent:</strong> I'm not afraid to go down the rabbit hole</li>
+                                    <li><strong>Ambitious:</strong> I believe in launching myself out of my comfort zone and I'm not scared to fail</li>
+                                    <li><strong>Reflective:</strong> It's not about eliminating flaws, it's about knowing them</li>
+                                    
+                                </ul>
                             </div>
                         </Carousel.Item>
                         <Carousel.Item>
                             <div className='carousel-content'>
                                 <h1>My challenges</h1>
-                                <p>
-                                    <ul>
-                                        <li><strong>Stubborn:</strong> Sometimes someone needs to pull me out of the rabbit hole</li>
-                                        <li><strong>Insecure:</strong> Especially at the start will I look for a lot of validation</li>
-                                    </ul>
-                                </p>
+                                <ul>
+                                    <li><strong>Stubborn:</strong> Sometimes someone needs to pull me out of the rabbit hole</li>
+                                    <li><strong>Insecure:</strong> Especially at the start will I look for a lot of validation</li>
+                                </ul>
                             </div>
                         </Carousel.Item>
                         <Carousel.Item>
                             <div className='carousel-content'>
                                 <h1>Where do I see myself in the future</h1>
-                                <p>
                                     <li>
                                         I want to specialize in Python.
                                     </li>
@@ -91,10 +99,19 @@ function NameSection() {
                                     <li>
                                         Virtual reality, augmented reality and a.i. assisting our day to day life is our future, and I aspire to become part of the evolution and contribute to a new, sustainable and modern world.
                                     </li>
-                                </p>
                             </div>
                         </Carousel.Item>
                     </Carousel>
+                </Col>
+            </Row>
+            <Row className='current-section'>
+                <Col>
+                    <strong>Current occupation: </strong>
+                    <label>Looking for a new challenge!</label>
+                </Col>
+                <Col>
+                    <strong>Education: </strong>
+                    <label>Associate Degree Software Engineering{latestEducation.title} at zuyd Hogeschool{latestEducation.school}</label>
                 </Col>
             </Row>
             <Row className='contact-row'>
@@ -104,7 +121,6 @@ function NameSection() {
                     </Button>
                 </Col>
             </Row>
-
         </Container>
     );
 }

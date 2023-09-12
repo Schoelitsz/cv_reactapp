@@ -29,12 +29,6 @@
             justify-content: flex-start;
             //font-family: $font-cherry;
         }
-
-        .current-section {
-            display: flex;
-            align-items: center;
-            //border: 10px solid black;
-        }
     }
 
     .carousel {
@@ -46,6 +40,7 @@
         .carousel-item {
             padding-left:90px;
             padding-right:90px;
+            height: 300px;
 
             @media only screen and (max-width: 992px) {
                 padding: 0;
@@ -86,6 +81,14 @@
             }
         }
 
+    }
+
+    .current-section {
+        display: flex;
+        align-items: center;
+        //border: 10px solid black;
+        padding-left: 141px;
+        padding-bottom: 75px;
     }
 }
 

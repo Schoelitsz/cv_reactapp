@@ -1,5 +1,5 @@
 import React from 'react';
-//import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import NameSection from './NameSection';
 import Timeline from './Timeline';
 import SkillSection from './SkillSection';
