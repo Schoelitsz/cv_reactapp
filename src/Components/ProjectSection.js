@@ -22,7 +22,7 @@ function ProjectCards() {
         <Row>
             {cardsArray.map((card, index) => (
               <Col>
-                <Card style={{ width: '18rem' }} className='project-card'>
+                <Card style={{ width: '18rem' }} className='project-card'key={card}>
                 <Card.Body>
                   <Card.Title>{card.title}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">{card.subtitle}</Card.Subtitle>

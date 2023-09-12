@@ -40,6 +40,7 @@
         .carousel-item {
             padding-left:90px;
             padding-right:90px;
+            height: 300px;
 
             @media only screen and (max-width: 992px) {
                 padding: 0;
@@ -81,6 +82,14 @@
         }
 
     }
+
+    .current-section {
+        display: flex;
+        align-items: center;
+        //border: 10px solid black;
+        padding-left: 141px;
+        padding-bottom: 75px;
+    }
 }
 
 //timeline section
@@ -88,7 +97,7 @@
     align-items: flex-start; 
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    //height: 100vh;
     padding-top: 40px;
 
     .timeline {
@@ -215,4 +224,14 @@
     align-items: center; 
     flex-direction: column;
     height: 100vh; 
+
+    .contact-form {
+        padding: 5px;
+
+        .submitcontact-button {
+            padding: 5px;
+
+
+        }
+    }
 }

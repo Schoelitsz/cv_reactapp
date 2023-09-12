@@ -2,10 +2,18 @@ import React from 'react';
 import { Container} from 'react-bootstrap';
 import '../styles/scss/Section.scss'
 
+
 function Timeline() {
   return (
     <Container className="timeline-section" id='Resume'>
       <h1>Resume</h1>
+      {/* put experience and education in order by time
+      foreach item in experienceeducationarray 
+      create row 
+          if item == experience
+            Col = deco on right here /Col  Col not here /Col
+          elif item == education
+          Col not here /Col  Col (class = deco on left)   here /Col  */}
       <ul className="timeline">
         <li className="timeline-item mb-5">
           <h3>Software Engineer</h3>
@@ -57,7 +65,7 @@ function Timeline() {
             It was hard not to fall in love with every single aspect of this experience, and I never say if it's about going back for more.
           </p>
         </li>
-        {/* <li className="timeline-item mb-5">
+        <li className="timeline-item mb-5">
           <h3>HBO Associate Degree IT -- Graduated</h3>
           <h5 className="fw-bold">Zuyd Hogeschool Heerlen, The Netherlands</h5>
           <p className="text-muted mb-2 fw-bold">09/2018 - 07/2021</p>
@@ -71,7 +79,7 @@ function Timeline() {
 
             It was hard not to fall in love with every single aspect of this experience, and I never say if it's about going back for more.
           </p>
-        </li> */}
+        </li>
       </ul>
     </Container>
   );

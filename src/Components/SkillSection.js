@@ -67,7 +67,7 @@ function SkillSection() {
                 <Row>
                     <h1>Also experienced with:</h1>
                     {iconSkillsArray.map(skill => (
-                        <Col>
+                        <Col key={skill}>
                             <div className='skilldiv'>
                                 <img src={`/images/${skill}.png`} alt={`${skill}.png`} />
                                 <h3>{skill}</h3>
