@@ -46,6 +46,16 @@ function NameSection() {
                     <h1>{user.fullname}</h1>
                 </Col>
             </Row>
+            <Row className='current-section'>
+                <Col>
+                    <strong>Current occupation: </strong>
+                    <label>Looking for a new challenge!</label>
+                </Col>
+                <Col>
+                    <strong>Education: </strong>
+                    <label>Associate Degree Software Engineering{latestEducation.title} at zuyd Hogeschool{latestEducation.school}</label>
+                </Col>
+            </Row>
             <Row className='carousel'>
                 <Col>
                     <Carousel interval={10000}>
@@ -102,16 +112,6 @@ function NameSection() {
                             </div>
                         </Carousel.Item>
                     </Carousel>
-                </Col>
-            </Row>
-            <Row className='current-section'>
-                <Col>
-                    <strong>Current occupation: </strong>
-                    <label>Looking for a new challenge!</label>
-                </Col>
-                <Col>
-                    <strong>Education: </strong>
-                    <label>Associate Degree Software Engineering{latestEducation.title} at zuyd Hogeschool{latestEducation.school}</label>
                 </Col>
             </Row>
             <Row className='contact-row'>
