@@ -38,33 +38,38 @@ function NameSection() {
                 <Col lg={4}>
                     <div className='picture-frame'>
                     <picture>
-                        <img src='/images/CV-selfie.jpg' alt='me'></img>
+                        <img src='/images/CV-selfie.jpg' alt='me' className='frame-image'></img>
                     </picture>
                     </div>
                 </Col>
                 <Col className='d-flex align-items-center' lg={4}>
-                    <h1>{user.fullname}</h1>
-                </Col>
-            </Row>
-            <Row className='current-section'>
-                <Col>
-                    <strong>Current occupation: </strong>
-                    <label>Looking for a new challenge!</label>
-                </Col>
-                <Col>
-                    <strong>Education: </strong>
-                    <label>Associate Degree Software Engineering{latestEducation.title} at zuyd Hogeschool{latestEducation.school}</label>
+                    <h1 className='name'>{user.fullname}</h1>
+
                 </Col>
             </Row>
             <Row className='carousel'>
                 <Col>
                     <Carousel interval={10000}>
+                        <Carousel.Item className='carousel-content'>
+                            <ul>
+                                <li>
+                                    <strong>Current occupation: </strong>
+                                    <h2>Looking for a new challenge!</h2>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <strong>Education: </strong>
+                                    <h2>Associate Degree Software Engineering at zuyd Hogeschool</h2>
+                                </li>
+                            </ul>
+                        </Carousel.Item>
                         <Carousel.Item>
                             <div className='carousel-content'>
                                 <h1>Hi, I'm Terri</h1>
                                 <ul>
                                     <li>
-                                        I'm a Junior Software Developer with a <strong>Creative Soul</strong>.
+                                        I'm a Junior Software Engineer with a <strong>Creative Soul</strong>.
                                     </li>
                                     <li>
                                         Love playing with <strong>front-end</strong>, fascinated by <strong>back-end</strong>,
@@ -73,6 +78,12 @@ function NameSection() {
                                     </li>
                                     <li>
                                         I currently have an Associate Degree in IT specialized in Software Engineering
+                                    </li>
+                                    <li>
+                                        I wish to duo-specialize in C# .Net, Python PyQt, to enable my road to embedded software, machine learning and eventually a.i.
+                                    </li>
+                                    <li>
+                                        I do not intend for AD to be my last Diploma 
                                     </li>
                                 </ul>
                             </div>
