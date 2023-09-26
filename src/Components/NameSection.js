@@ -5,11 +5,14 @@ import '../styles/scss/Section.scss';
 //import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from "react"; 
 
+const userApiUrl = 'https://cv-server.azurewebsites.net/api/user';
+const latestEducationApiUrl = 'https://cv-server.azurewebsites.net/api/latestEducation';
+
 function NameSection() {
     const [user, setUser] = useState({ name: '' });
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/user')
+    fetch(userApiUrl)
       .then(response => response.json())
       .then(data => {
         setUser(data);
@@ -22,7 +25,7 @@ function NameSection() {
     const [latestEducation, setLatestEducation] = useState({ latestEducation: ''})
 
     useEffect(() => {
-    fetch('http://localhost:8000/api/latestEducation')
+    fetch(latestEducationApiUrl)
             .then(response => response.json())
             .then(data => {
                 setLatestEducation(data);
