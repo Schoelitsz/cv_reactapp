@@ -21,7 +21,7 @@ function ProjectCards() {
         <h1>Projects</h1>
         <Row>
             {cardsArray.map((card, index) => (
-              <Col>
+              <Col key={index}>
                 <Card style={{ width: '18rem' }} className='project-card'key={card}>
                 <Card.Body>
                   <Card.Title>{card.title}</Card.Title>

@@ -1,5 +1,6 @@
 @import 'variables';
 
+
 .namesection {
     display: flex;
     flex-direction: column;
@@ -107,7 +108,7 @@
     align-items: flex-start; 
     display: flex;
     flex-direction: column;
-    //height: 100vh;
+    height: 300vh;
     padding-top: 40px;
 
     .timeline {
@@ -141,7 +142,7 @@
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    height: 100vh; 
+    height: 200vh; 
 
     h1 {
         display: flex;
@@ -188,6 +189,8 @@
         flex-direction: column;
         padding-top:25px;
         padding-bottom:25px;
+        flex-direction: column;
+        height: 50vh; 
 
         h1 {
             padding-top: 5px;
