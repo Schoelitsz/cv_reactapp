@@ -46,7 +46,7 @@ function NameSection() {
                     </div>
                 </Col>
                 <Col className='d-flex align-items-center' lg={4}>
-                    <h1 className='name'>{user.fullname}</h1>
+                    <h1 className='name'>Terri Schoelitsz</h1>
 
                 </Col>
             </Row>
