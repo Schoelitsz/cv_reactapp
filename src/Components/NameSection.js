@@ -57,7 +57,7 @@ function NameSection() {
                             <ul>
                                 <li>
                                     <strong>Current occupation: </strong>
-                                    <h2>Looking for a new challenge!</h2>
+                                    <h2>Application developer at Intergrin <img></img></h2>
                                 </li>
                             </ul>
                             <ul>
